@@ -5,6 +5,7 @@
     "main": "src/index.ts",
     "scripts": {
         "build": "rimraf dist && swc ./src -d dist",
+        "db:console": "docker compose exec database psql -h localhost -U postgres -d superstack_dev",
         "start": "node dist/index.js",
         "start:docker": "npm run build && node --inspect=0.0.0.0 dist/index.js"
     },
