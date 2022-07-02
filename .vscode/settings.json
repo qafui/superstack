@@ -4,5 +4,10 @@
         "other": "on",
         "comments": "off",
         "strings": "on"
+    },
+    "triggerTaskOnSave.tasks": {
+        "restart backend": [
+            "src/**/*"
+        ]
     }
 }
